@@ -26,9 +26,7 @@
                 <label for="battery"></label>
                 <meter id="battery" value="2" min="0" max="3"></meter><br>
             </div>
-            
         </div>
-        
         <nav>
             <div class="navbar-mylogo">
                 <div class="navbar-list">
@@ -38,14 +36,11 @@
                     <button class="my-button" id="my-button">
                         <i class="fas fa-bars"></i>
                     </button>
-                    
                     <ul id="mynav">
                         <li><a href="#">about</a></li>
                         <li><a href="#">portfolio</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>
-                
-
                 </div>
             </div>
         </nav>
@@ -62,20 +57,14 @@
             <p class="text-header-connect">
                 LET'S CONNECT
             </p>
-
             <ul class="link-portfolio">
                 <li class="link-portfolio-text"><i class="fa-brands fa-twitter"></i></li>
                 <li class="link-portfolio-text"><i class="fa-brands fa-linkedin"></i></li>
                 <li class="link-portfolio-text"><i class="fa-solid fa-m"></i></li>
                 <li class="link-portfolio-text"><i class="fa-brands fa-github"></i></li>
-                <li class="link-portfolio-text"><i class="fa-regular fa-hand-peace"></i></li>
-                
+                <li class="link-portfolio-text"><i class="fa-regular fa-hand-peace"></i></li> 
             </ul>
-
         </div>
-
-
-
     </section>
     <section class="card">
         <div class="card-holder-1">
@@ -124,8 +113,6 @@
                             </div>
                           </div>
                         </li>
-                        
-
                     </li>
                 </ul>
             </div>
@@ -176,8 +163,6 @@
                             </div>
                           </div>
                         </li>
-                        
-
                     </li>
                 </ul>
             </div>
@@ -228,8 +213,6 @@
                             </div>
                           </div>
                         </li>
-                        
-
                     </li>
                 </ul>
             </div>
@@ -292,20 +275,22 @@
                 <ul class="footer-holders">
                     <li class ="footer-holder">
                         <div class="footer-holder-div">
-                            <h1>
+                            <h1 class="footer-About">
                                 About 
-                            </h1>
-                            <h1>
+                            
+                           
                                 Myself
                             </h1>
-                            <p>
+                            <p class="footer-About-dsc">
                                 Hello I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! if you like what you see and have a project you need coded, don't hesitate to contact me.
                             </p>
-                        </div>    
+                        </div>
+                    </li>    
                     <div>
                         <p class="text-header-connect">
                             LET'S CONNECT
                         </p>
+                        
             
                         <ul class="link-portfolio">
                             <li class="link-portfolio-text"><i class="fa-brands fa-twitter"></i></li>
@@ -316,50 +301,81 @@
                             
                         </ul>
                         <div class="footer-details-btn">
-                            <button type="button" class="btn" id="0">
-                                  See Project
+                            <button type="button" class="footer-About-btn" id="0">
+                                  Get my resume
                             </button>
                         </div>
                     </div>
                     <div class="footer-details-text">
-                        <div class="footer-details-topics">
                         <h2 class="footer-languages">Languages</h2>
-                            <div class="footer-details-topics-text-1"><img src="img/js.png" alt="Javascript"> 
-                                Javascript
+                        <div class="footer-details-topics">
+                        
+                            <div class="footer-details-topics-text-1">
+                                <img class="footer-img" src="img/js.png" alt="Javascript"> 
+                                <div class="footer-javascript">Javascript</div>
                             </div>
-                            <div class="footer-details-topics-text-2"><img src="img/html.png" alt="HTML"> 
-                                HTML
+                            <div class="footer-details-topics-text-2">
+                                <img class="footer-img" src="img/html.png" alt="Javascript"> 
+                                <div class="footer-html">HTML</div>
                             </div>
-                            <div class="footer-details-topics-text-3"><img src="img/css.png" alt="CSS"> 
-                                CSS
+                            <div class="footer-details-topics-text-3">
+                                <img class="footer-img" src="img/css.png" alt="Javascript"> 
+                                <div class="footer-css">CSS</div>
                             </div>
-                            </div>
+                        </div>
                             <div class="footer-details-btn">
-                              <div>
-                                frameworks 
-                                <img src="img/arrow.png" alt="Javascript"> </div>
-                              <hr>
-                              <div>
-                                Skills 
-                                <img src="img/arrow.png" alt="Javascript"> </div>
+                                <div class="footer-details-btn-frameworks">
+                                    <img class="footer-frameworks-img-1" src="img/arrow.png" alt="Javascript">
+                                    <div class="footer-frameworks">frameworks</div>
+                                </div>
+                                <hr>
+                                <div class="footer-details-btn-skills">
+                                    <img class="footer-frameworks-img-2" src="img/arrow.png" alt="Javascript">
+                                    <div class="footer-frameworks">skills</div>
+                                </div>
+                                <hr>
                             </div>
-                            <hr>
-                          </div>
-                        </li>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
 
     </section>
-    <section class="contact-form">
-        <div>
-            <div>
-
-
-            </div>
+    <section class="contact-form" id="contact">
+        <div class="contact-form-container">
+          <h2 class="contact-form-title">Contact me</h2>
+          <p class="contact-form-dsc">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form id="form-spree" action="https://formspree.io/f/xjvdwzoz" method="post">
+            <ul class="ul">
+              <li>
+                <label for="fname" class="form-name"></label>
+                <input type="text" id="fname" class="contact-name" name="contact-name"
+                  placeholder="Yeremias" required maxlength="30" minlength="5" />
+              </li>
+              <li>
+                <label for="email" class="contact-email"></label>
+                <input type="email" id="email" class="contact-email-address" placeholder="natajayanj14@gmail.com"
+                  name="contact-email-address" required/>
+              </li>
+              <li>
+                <label for="message" class="contact-form-message"></label>
+                <textarea id="message" class="contact-message" name="contact-message" placeholder="Write your message here"
+                  cols="30" rows="8" maxlength="500" minlength= "5" required></textarea>
+              </li>
+              <li>
+                <input id="submit-text" type="submit" value="Get It Touch" class="submit-button" />
+                <p class="error"></p>
+              </li>
+            </ul>
+          </form>
         </div>
-    </section>
+      </section>
+   
 
 
 
